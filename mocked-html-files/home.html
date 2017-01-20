@@ -1,0 +1,303 @@
+<html lang="en" data-ng-app="sample-blog" data-ng-controller="SampleBlogMainController as vc" class="ng-scope"><head data-page-head="" class="ng-isolate-scope"><title data-ng-bind="vc.vm.pageTitle" class="ng-binding">Home - FrontPress Default Template</title>
+<meta name="title" content="Home - FrontPress Default Template">
+<meta name="description" content="">
+<meta name="robots" content="index, follow">	
+
+<link rel="canonical" href="http://localhost:4000/#!/pagina/2">
+
+<!-- ngIf: vc.vm.relPrevNumber --><link rel="prev" data-ui-sref="home-pagination({pageNumber:vc.vm.relPrevNumber})" data-ng-if="vc.vm.relPrevNumber" class="ng-scope" href="#!/pagina/2"><!-- end ngIf: vc.vm.relPrevNumber -->
+<!-- ngIf: vc.vm.relNextNumber --><link rel="next" data-ui-sref="home-pagination({pageNumber:vc.vm.relNextNumber})" data-ng-if="vc.vm.relNextNumber" class="ng-scope" href="#!/pagina/4"><!-- end ngIf: vc.vm.relNextNumber -->
+<ng-transclude><style type="text/css" class="ng-scope">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	    <meta name="fragment" content="!" class="ng-scope">
+	    <meta charset="UTF-8" class="ng-scope">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" class="ng-scope">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" class="ng-scope">
+        <!-- inject:css -->
+        <!-- endinject -->
+	</ng-transclude><style>::selection {}</style></head>
+	<body>
+		<!-- uiView: --><ui-view class="ng-scope"><div class="ng-isolate-scope"> 
+	<div data-infinite-scroll="vc.loadMorePostsAndPaginate()" data-infinite-scroll-immediate-check="false" data-infinite-scroll-disabled="vc.vm.isLoadingPosts || vc.isInfiniteScrollDisabled" class="ng-isolate-scope">
+		<div class="ng-isolate-scope">
+	<!-- ngIf: vc.vm.isLoadingPosts -->
+	<!-- ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/12/16/arvore-de-natal-de-garrafa-pet">Árvore de Natal de Garrafa Pet: Faça Você Mesmo!</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">16/12/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/Árvore-de-Natal-de-Garrafa-Pet-passo-11.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/Árvore-de-Natal-de-Garrafa-Pet-passo-11.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Uma forma bem fácil e rápida de decorar sua casa ou seu trabalho é utilizando itens que você já possui. Além de gastar pouco, você utiliza de meios sustentáveis para decorar.&nbsp;O passo a passo de hoje é em parceria com o Blog do Elo7, onde ensinará você a fazer uma mini árvore de Natal de&nbsp;garrafa […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/arvore-de-natal-de-garrafa-pet/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/12/15/pinte-a-casa-com-as-cores-de-2017">Pinte a Sua Casa com as Cores de 2017!</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">15/12/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/16-pantone-cor-2017-Greenery.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/16-pantone-cor-2017-Greenery.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Anualmente, as marcas de tintas realizam estudos de tendência e elegem as cores que serão tendência no ano seguinte. Em 2017, a Coral elegeu o azul Mergulho Sereno, um azul acinzentado e que transmite paz, algo essencial para os dias tensos em que vivemos; a Eucatex escolheu Azul Arquipélado, um tom vibrante e que transmite […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/pinte-a-casa-com-as-cores-de-2017/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/12/14/mesa-de-natal-como-montar">Mesa de Natal: Como Montar uma Decoração Surpreendente</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">14/12/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/mesa-natal-1.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/mesa-natal-1.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Montar uma mesa de natal&nbsp;pode parecer uma tarefa complicada, mas com um pouco de disposição e cuidado, você pode montar sua mesa para ceia de forma sensacional. Para te ajudar a preparar sua mesa natalina, preparamos algumas dicas para deixar sua sala de jantar bastante receptiva e acolhedora nessa data tão especial. Numa mesa de […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/mesa-de-natal-como-montar/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/12/07/guirlanda-de-natal-30">Guirlanda de Natal: 30 Modelos Fascinantes para sua Decoração</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">07/12/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/Guirlanda-de-Natal-coração-branco-e-vermelho.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/Guirlanda-de-Natal-coração-branco-e-vermelho.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>A Guirlanda de Natal é um item imprescindível na decoração de natal. Independentemente de você morar numa casa ou apartamento, ter uma guirlanda em sua porta demostra que sua casa está no clima natalino. Esse enfeite natalino pode ser comprado nas mais diversas lojas de decoração e utilidades, mas pode possuir um preço um pouco […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/guirlanda-de-natal-30/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/12/05/pisca-pisca-luzinhas-de-natal">Pisca-Pisca: Tudo o que Você Precisa Saber sobre as Luzinhas de Natal</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">05/12/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/Na-hora-de-colocar-os-pisca-piscas-a-dica-é-primeiro-colocar-as-luzinhas-e-apenas-depois-decorar-com-os-enfeites.-Isso-evita-que-os-fios-fiquem-aparecendo.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/Na-hora-de-colocar-os-pisca-piscas-a-dica-é-primeiro-colocar-as-luzinhas-e-apenas-depois-decorar-com-os-enfeites.-Isso-evita-que-os-fios-fiquem-aparecendo.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Pisca-pisca é dos enfeites natalinos mais desejados para enfeitar a casa. O que talvez você não saiba é que eles não precisam estar apenas na árvore. Também podem ser usados para decorar a mesa da ceia e outras partes da morada. Conversamos com a empresária e decoradora Cecilia Dale, da loja Cecilia Dale, e com […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/pisca-pisca-luzinhas-de-natal/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/12/02/decoracao-de-natal-estilos-ideias-dicas">Decoração de Natal: Estilos, Ideias e Dicas para Você</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">02/12/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/Decoração-de-Natal-para-a-ceia-de-jantar-mesa-posta-1.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/12/Decoração-de-Natal-para-a-ceia-de-jantar-mesa-posta-1.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>O Natal é uma data muito especial, pois reúne toda a família e deixa um clima fraterno no ar. De modo que é essencial preparar um ambiente aconchegante, com uma decoração de Natal que destaque o clima de festas. A fachada da casa não pode ficar de fora dessa decoração, pois ela permite trazer o […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/decoracao-de-natal-estilos-ideias-dicas/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/12/01/dicas-cantinho-da-leitura">Dicas para Montar um Cantinho da Leitura em Casa</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">01/12/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/cantinho-da-leitura-na-janela-branco.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/cantinho-da-leitura-na-janela-branco.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Ter em casa um cantinho da leitura para poder sentar e apenas ler, se desligar do mundo a sua volta, é algo muito especial! &nbsp;Não apenas para os adultos, mas também para iniciar as crianças no mundo da leitura e poderem vivenciar desde cedo as maravilhas que um bom livro faz por você. Mas quem […]
+</p><p><a href="https://www.vivadecora.com.br/revista/casa-2/dicas-cantinho-da-leitura/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/30/42-modelos-de-arvore-de-natal">42 Modelos de Árvore de Natal para Inspirar a sua Decoração</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">30/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/arvore-de-natal-enfeitada.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/arvore-de-natal-enfeitada.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Pequenos detalhes fazem grande diferença na Decoração de Natal e levar em conta os símbolos principais do Natal é fundamental. A árvore de Natal é o pilar da decoração e resolve parcialmente a dúvida de como decorar a casa para o Natal. Investir em flores, símbolos natalinos e luzes de LED são formas econômicas de […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/42-modelos-de-arvore-de-natal/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/28/casa-na-arvore">Casa na Árvore: Como Montar, Cuidados e Investimento para ter Uma</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">28/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/casa-na-arvore-floresta-rede-varanda-verde-planta-3.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/casa-na-arvore-floresta-rede-varanda-verde-planta-3.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Quem nunca sonhou em ter uma casa na árvore? Esse espaço tão presente em filmes, desenhos animados e novelas é um ambiente que, fora da ficção, é bem raro de ser encontrado. No entanto, ter uma casa na árvore é um sonho de criança que pode sim ser realizado! Basta ter uma bela árvore, um […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/casa-na-arvore/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/25/horta-em-casa">Horta em Casa: Dicas para Escolher as Plantas Perfeitas</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">25/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2015/04/hortas.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2015/04/hortas.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>A forma mais fácil de começar a sua horta&nbsp;em casa é pela plantação&nbsp;de temperos na sua cozinha. Assim rapidamente você terá à mão tudo que você mais utiliza nos seus preparos, fresco e sem veneno! Este tipo de cultivo é o ideal para quem ainda não tem muita intimidade com o plantio ou para quem […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/horta-em-casa/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/25/enfeites-de-natal">36 Enfeites de Natal Criativos para uma Decoração Exclusiva</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">25/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/enfeites-de-natal-mesa-de-ccentro.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/enfeites-de-natal-mesa-de-ccentro.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Preparar a casa para o Natal é uma das épocas preferidas de muita gente. Nada como ver as ruas com casas iluminadas e enfeitadas para o natal. É uma época de muita união e amor entre as pessoas e isso deve refletir na decoração da casa. Investir em enfeites de natal perfeitos é essencial, mas […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/enfeites-de-natal/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/24/como-cada-signo-vai-aproveitar-as-ferias">Como cada Signo vai Aproveitar as Férias</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">24/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/Copy-of-Nights-outlights-out.png" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/Copy-of-Nights-outlights-out.png">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Férias de fim de ano chegando … Hora de reabastecer as energias para o próximo ano com mais motivação. Se você ainda tem dúvidas de como aproveitar os seus dias de folga,o seu signo solar não pode ajudar na decisão. Separamos dicas para cada casa do zodíaco aproveitar em casa os dias de descanso. Acompanhe. […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/como-cada-signo-vai-aproveitar-as-ferias/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/23/a-psicologia-e-os-ambientes">A Psicologia e os Ambientes: Como a Decoração Influencia a sua Vida</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">23/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/09/sala-cinza-com-sofá-com-chaise.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/09/sala-cinza-com-sofá-com-chaise.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>A nossa relação com o mundo exterior é mediada constantemente pelos cinco sentidos. São eles a porta de entrada para as nossas percepções sobre tudo aquilo que nos rodeia. Estímulos provenientes das imagens, dos cheiros, dos sons, dos toques e dos gostos definem todas as nossas experiências ao longo da vida, constituindo, nesta interação, a […]
+</p><p><a href="https://www.vivadecora.com.br/revista/casa-2/a-psicologia-e-os-ambientes/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/21/dicas-casa-calor">5 Dicas de Arquitetura para deixar a Casa Preparada para o Calor</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">21/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/kta1.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/kta1.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Com a chegada do verão, muitos são os brasileiros que procuram maneiras de amenizar a intensidade do calor. Ventilador e ar-condicionado são grandes aliados para ajudar você a passar por essa estação, mas não são os únicos. Na hora de construir ou reformar uma casa, arquitetos investem em alguns truques para tornar as casas localizadas […]
+</p><p><a href="https://www.vivadecora.com.br/revista/casa-2/dicas-casa-calor/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/21/artesanato-com-palitos-de-sorvete">Artesanato com Palitos de Sorvete: Nicho para Quarto Infantil</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">21/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/artesanato-com-palitos-de-sorvete-passo3-nicho-e1479752042963.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/artesanato-com-palitos-de-sorvete-passo3-nicho-e1479752042963.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Já pensou em criar um nicho com artesanato com palitos de sorvete para quarto de criança? O Blog do Elo7 te ensina a fazer um nicho super criativo. Vamos ver? A proposta é criar mini estantes com diferentes formatos para pequenos enfeites, bonecos ou carrinhos. Com apenas dois materiais: cola de silicone ou cola branca […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/artesanato-com-palitos-de-sorvete/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/17/decore-sua-casa-gastando-menos-do-que-com-um-iphone-7">Decore sua Casa Gastando Menos do que com um Iphone 7</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">17/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/15000-sala-de-estar-apartamento-vila-mariana-luciane-mota-viva-decora.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/15000-sala-de-estar-apartamento-vila-mariana-luciane-mota-viva-decora.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>O inicio das vendas do iPhones&nbsp;7 e 7 Plus, da Apple, nesta semana causou um burburinho no Brasil todo. Como era de se esperar, diversos fãs da Apple ficaram&nbsp;a postos para comprar o seu tão sonhado iPhone, entretanto os valores estão mais altos do que a expectativa. No mercado americano, os novos aparelhos iPhones 7 […]
+</p><p><a href="https://www.vivadecora.com.br/revista/ideias-criativas-diy/decore-sua-casa-gastando-menos-do-que-com-um-iphone-7/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/17/como-arrumar-cama-de-casal">Como Arrumar Cama de Casal: Dossiê Completo para Você</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">17/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/08/27108-quarto-de-casal-pequeno-ibd-arquitetura-viva-decora.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/08/27108-quarto-de-casal-pequeno-ibd-arquitetura-viva-decora.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>A cama é a peça-chave do quarto e precisa estar sempre limpa, aconchegante e confortável. Por isso, é essencial saber como arrumar cama de casal, além de dar uma atenção especial à roupa de cama – da sua escolha à lavagem. As opções de tecidos e cores são inúmeras, bem como as combinações que podem […]
+</p><p><a href="https://www.vivadecora.com.br/revista/quarto/como-arrumar-cama-de-casal/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/11/iluminacao-quarto-do-bebe">Dicas Incríveis de Iluminação para o Quarto do Bebê</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">11/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/Iluminação-Quarto-do-Bebê-Sanca-iluminada.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/Iluminação-Quarto-do-Bebê-Sanca-iluminada.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Quando se pensa em projetar um quarto de bebê, um ponto importante a se levar em conta é a iluminação. Através dela podemos criar um ambiente acolhedor e tranquilo, que seja propício ao sono do bebê e confortável durante o ato de amamentar e trocar o seu pequeno. A seguir formulamos algumas dicas que você […]
+</p><p><a href="https://www.vivadecora.com.br/revista/quarto/iluminacao-quarto-do-bebe/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/11/04/design-biennale-interieur">Design: 5 Destaques da 25ª Edição da Biennale Interieur</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">04/11/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/2.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/2.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Texto de Vera Santiago, coach da Agência de Design. &nbsp; A Biennale Interieur, realizada na cidade de Kortrijk (Bélgica), é uma organização sem fins lucrativos, que atua no campo do design, desenvolvimento de produtos e inovação. Entre 14 e 23 de outubro, a Bienal realizou sua 25ª edição.&nbsp;Kortrijk é uma cidade pequena, mas o fácil […]
+</p><p><a href="https://www.vivadecora.com.br/revista/casa-2/design-biennale-interieur/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList --><div data-ng-repeat="post in vc.vm.postsList" class="ng-scope">	
+		<h2 data-post="post" class="ng-isolate-scope"><a data-ng-bind="vc.post.title.rendered" data-ui-sref="post({postSlug:vc.post.slug, postYear: vc.post.year, postMonth: vc.post.month, postDay: vc.post.day, postId: vc.post.id})" class="ng-binding" href="#!/2016/10/31/reforma-de-banheiro-10-dicas">Reforma de Banheiro: 10 Dicas Essenciais para Reformar o seu</a></h2>	
+		<p data-ng-bind="vc.post.date | date :  'dd/MM/y' " data-post="post" class="ng-binding ng-isolate-scope">31/10/2016</p>
+		<img data-post="post" class="ng-isolate-scope" data-ng-src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/reforma-de-banheiro-Iluminação.jpg" src="https://imagens-revista.vivadecora.com.br/uploads/2016/11/reforma-de-banheiro-Iluminação.jpg">	
+		<p data-ng-bind-html="vc.post.excerpt.rendered | trustAsHtml " data-post="post" class="ng-binding ng-isolate-scope"><p>Caprichar na decoração de um banheiro já deixou de ser um luxo sem necessidade, um banheiro gostoso deve ser bonito e acolhedor, contar com revestimentos elegantes e ter uma iluminação aconchegante. É possível usar vários truques para contornar a maioria dos problemas, mas se você quer mudar mesmo a cara do ambiente, a reforma de […]
+</p><p><a href="https://www.vivadecora.com.br/revista/casa-2/reforma-de-banheiro-10-dicas/" class="post-read-more">Continue Lendo…</a></p>
+</p>
+        <div data-post="post" class="ng-isolate-scope">
+    Share:
+    <span data-ng-click="vc.vm.openShareWindow('twitter', vc.post)">Twitter</span>
+    <span data-ng-click="vc.vm.openShareWindow('facebook', vc.post)">Facebook</span>
+    <span data-ng-click="vc.vm.openShareWindow('gplus', vc.post)">Google+</span>
+</div>
+	</div><!-- end ngRepeat: post in vc.vm.postsList -->
+</div>
+		<!-- ngIf: vc.vm.isLoadingPosts -->
+		<div class="ng-isolate-scope">
+	<!-- ngIf: vc.vm.prevPageNumber --><a data-ui-sref="home-pagination({pageNumber:vc.vm.prevPageNumber})" data-ng-if="vc.vm.prevPageNumber" class="ng-scope" href="#!/pagina/2">&lt;&lt;</a><!-- end ngIf: vc.vm.prevPageNumber -->
+	
+	<!-- ngRepeat: page in vc.vm.pages --><a data-ng-repeat="page in vc.vm.pages" data-ng-bind="page.number" data-ui-sref="home-pagination({pageNumber:page.number})" class="ng-binding ng-scope" href="#!/pagina/4">4</a><!-- end ngRepeat: page in vc.vm.pages --><a data-ng-repeat="page in vc.vm.pages" data-ng-bind="page.number" data-ui-sref="home-pagination({pageNumber:page.number})" class="ng-binding ng-scope" href="#!/pagina/5">5</a><!-- end ngRepeat: page in vc.vm.pages --><a data-ng-repeat="page in vc.vm.pages" data-ng-bind="page.number" data-ui-sref="home-pagination({pageNumber:page.number})" class="ng-binding ng-scope" href="#!/pagina/6">6</a><!-- end ngRepeat: page in vc.vm.pages --><a data-ng-repeat="page in vc.vm.pages" data-ng-bind="page.number" data-ui-sref="home-pagination({pageNumber:page.number})" class="ng-binding ng-scope" href="#!/pagina/7">7</a><!-- end ngRepeat: page in vc.vm.pages -->		
+
+	<!-- ngIf: vc.vm.nextPageNumber --><a data-ui-sref="home-pagination({pageNumber:vc.vm.nextPageNumber})" data-ng-if="vc.vm.nextPageNumber" class="ng-scope" href="#!/pagina/4">&gt;&gt;</a><!-- end ngIf: vc.vm.nextPageNumber -->
+</div>
+	</div>
+</div></ui-view>
+	
+    <!-- inject:js -->
+    <script src="/js/angular.js"></script>
+    <script src="/js/release/frontpress.js"></script>
+    <script src="/js/dev/frontpress.constant.js"></script>
+    <script src="/js/dev/sample-blog.js"></script>
+    <!-- endinject -->
+
+<div id="window-resizer-tooltip" style="display: none;"><a href="#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1366</span> x <span class="tooltipHeight" id="winHeight">720</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1366</span> x <span class="tooltipHeight" id="vpHeight">305</span></div></body></html>

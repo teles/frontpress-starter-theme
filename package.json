@@ -1,0 +1,30 @@
+{
+  "name": "frontpress-starter-theme",
+  "version": "0.0.1",
+  "description": "FrontPress defaut theme css and html.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teles/frontpress-starter-theme.git"
+  },
+  "keywords": [
+    "frontpress",
+    "css",
+    "theme",
+    "frontpress-theme"
+  ],
+  "author": "Teles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teles/frontpress-starter-theme/issues"
+  },
+  "homepage": "https://github.com/teles/frontpress-starter-theme#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-load-tasks": "^0.8.4",
+    "gulp-sass": "^3.1.0"
+  }
+}
