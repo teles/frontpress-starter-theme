@@ -1,0 +1,8 @@
+@function get-from-palette($color-name, $color-variant: '10') {
+	$color: map-get(map-get($palette, $color-name),$color-variant);
+	@if $color {
+		@return $color;
+	} @else {
+		@warn "=> ERROR: COLOR NOT FOUND! <= | Your $color-name, $color-variant combination did not match any of the values in the $nes-palette map.";
+	}
+}
