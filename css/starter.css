@@ -1506,75 +1506,75 @@
 .p-margin--4 {
   margin: 40px !important; }
 
-.title,
-.subtitle {
+.title, .title--is-1, .title--is-2, .title--is-3, .title--is-4, .title--is-5, .title--is-6,
+.subtitle,
+.subtitle--is-1,
+.subtitle--is-2,
+.subtitle--is-3,
+.subtitle--is-4,
+.subtitle--is-5,
+.subtitle--is-6 {
   word-break: break-word; }
-  .title em,
-  .title span,
-  .subtitle em,
-  .subtitle span {
+  .title em, .title--is-1 em, .title--is-2 em, .title--is-3 em, .title--is-4 em, .title--is-5 em, .title--is-6 em,
+  .title span, .title--is-1 span, .title--is-2 span, .title--is-3 span, .title--is-4 span, .title--is-5 span, .title--is-6 span,
+  .subtitle em, .subtitle--is-1 em, .subtitle--is-2 em, .subtitle--is-3 em, .subtitle--is-4 em, .subtitle--is-5 em, .subtitle--is-6 em,
+  .subtitle span, .subtitle--is-1 span, .subtitle--is-2 span, .subtitle--is-3 span, .subtitle--is-4 span, .subtitle--is-5 span, .subtitle--is-6 span {
     font-weight: 300; }
-  .title strong,
-  .subtitle strong {
+  .title strong, .title--is-1 strong, .title--is-2 strong, .title--is-3 strong, .title--is-4 strong, .title--is-5 strong, .title--is-6 strong,
+  .subtitle strong, .subtitle--is-1 strong, .subtitle--is-2 strong, .subtitle--is-3 strong, .subtitle--is-4 strong, .subtitle--is-5 strong, .subtitle--is-6 strong {
     font-weight: 500; }
-  .title:not(:last-child),
-  .subtitle:not(:last-child) {
+  .title:not(:last-child), .title--is-1:not(:last-child), .title--is-2:not(:last-child), .title--is-3:not(:last-child), .title--is-4:not(:last-child), .title--is-5:not(:last-child), .title--is-6:not(:last-child),
+  .subtitle:not(:last-child),
+  .subtitle--is-1:not(:last-child),
+  .subtitle--is-2:not(:last-child),
+  .subtitle--is-3:not(:last-child),
+  .subtitle--is-4:not(:last-child),
+  .subtitle--is-5:not(:last-child),
+  .subtitle--is-6:not(:last-child) {
     margin-bottom: 1.5rem; }
 
-.title {
+.title, .title--is-1, .title--is-2, .title--is-3, .title--is-4, .title--is-5, .title--is-6 {
   color: red;
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.125; }
-  .title strong {
+  .title strong, .title--is-1 strong, .title--is-2 strong, .title--is-3 strong, .title--is-4 strong, .title--is-5 strong, .title--is-6 strong {
     color: inherit; }
-  .title + .highlight {
+  .title + .highlight, .title--is-1 + .highlight, .title--is-2 + .highlight, .title--is-3 + .highlight, .title--is-4 + .highlight, .title--is-5 + .highlight, .title--is-6 + .highlight {
     margin-top: -0.75rem; }
-  .title + .subtitle {
+  .title + .subtitle, .title--is-1 + .subtitle, .title--is-2 + .subtitle, .title--is-3 + .subtitle, .title--is-4 + .subtitle, .title--is-5 + .subtitle, .title--is-6 + .subtitle, .title + .subtitle--is-1, .title--is-1 + .subtitle--is-1, .title--is-2 + .subtitle--is-1, .title--is-3 + .subtitle--is-1, .title--is-4 + .subtitle--is-1, .title--is-5 + .subtitle--is-1, .title--is-6 + .subtitle--is-1, .title + .subtitle--is-2, .title--is-1 + .subtitle--is-2, .title--is-2 + .subtitle--is-2, .title--is-3 + .subtitle--is-2, .title--is-4 + .subtitle--is-2, .title--is-5 + .subtitle--is-2, .title--is-6 + .subtitle--is-2, .title + .subtitle--is-3, .title--is-1 + .subtitle--is-3, .title--is-2 + .subtitle--is-3, .title--is-3 + .subtitle--is-3, .title--is-4 + .subtitle--is-3, .title--is-5 + .subtitle--is-3, .title--is-6 + .subtitle--is-3, .title + .subtitle--is-4, .title--is-1 + .subtitle--is-4, .title--is-2 + .subtitle--is-4, .title--is-3 + .subtitle--is-4, .title--is-4 + .subtitle--is-4, .title--is-5 + .subtitle--is-4, .title--is-6 + .subtitle--is-4, .title + .subtitle--is-5, .title--is-1 + .subtitle--is-5, .title--is-2 + .subtitle--is-5, .title--is-3 + .subtitle--is-5, .title--is-4 + .subtitle--is-5, .title--is-5 + .subtitle--is-5, .title--is-6 + .subtitle--is-5, .title + .subtitle--is-6, .title--is-1 + .subtitle--is-6, .title--is-2 + .subtitle--is-6, .title--is-3 + .subtitle--is-6, .title--is-4 + .subtitle--is-6, .title--is-5 + .subtitle--is-6, .title--is-6 + .subtitle--is-6 {
     margin-top: -1.25rem; }
+  .title--is-1 {
+    font-size: 3.5rem; }
+  .title--is-2 {
+    font-size: 2.75rem; }
+  .title--is-3 {
+    font-size: 2rem; }
+  .title--is-4 {
+    font-size: 1.5rem; }
+  .title--is-5 {
+    font-size: 1.25rem; }
+  .title--is-6 {
+    font-size: 14px; }
 
-.title--is-1 {
-  font-size: 3.5rem; }
-
-.title--is-2 {
-  font-size: 2.75rem; }
-
-.title--is-3 {
-  font-size: 2rem; }
-
-.title--is-4 {
-  font-size: 1.5rem; }
-
-.title--is-5 {
-  font-size: 1.25rem; }
-
-.title--is-6 {
-  font-size: 14px; }
-
-.subtitle {
+.subtitle, .subtitle--is-1, .subtitle--is-2, .subtitle--is-3, .subtitle--is-4, .subtitle--is-5, .subtitle--is-6 {
   color: red;
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.25; }
-  .subtitle strong {
+  .subtitle strong, .subtitle--is-1 strong, .subtitle--is-2 strong, .subtitle--is-3 strong, .subtitle--is-4 strong, .subtitle--is-5 strong, .subtitle--is-6 strong {
     color: red; }
-  .subtitle + .title {
+  .subtitle + .title, .subtitle--is-1 + .title, .subtitle--is-2 + .title, .subtitle--is-3 + .title, .subtitle--is-4 + .title, .subtitle--is-5 + .title, .subtitle--is-6 + .title, .subtitle + .title--is-1, .subtitle--is-1 + .title--is-1, .subtitle--is-2 + .title--is-1, .subtitle--is-3 + .title--is-1, .subtitle--is-4 + .title--is-1, .subtitle--is-5 + .title--is-1, .subtitle--is-6 + .title--is-1, .subtitle + .title--is-2, .subtitle--is-1 + .title--is-2, .subtitle--is-2 + .title--is-2, .subtitle--is-3 + .title--is-2, .subtitle--is-4 + .title--is-2, .subtitle--is-5 + .title--is-2, .subtitle--is-6 + .title--is-2, .subtitle + .title--is-3, .subtitle--is-1 + .title--is-3, .subtitle--is-2 + .title--is-3, .subtitle--is-3 + .title--is-3, .subtitle--is-4 + .title--is-3, .subtitle--is-5 + .title--is-3, .subtitle--is-6 + .title--is-3, .subtitle + .title--is-4, .subtitle--is-1 + .title--is-4, .subtitle--is-2 + .title--is-4, .subtitle--is-3 + .title--is-4, .subtitle--is-4 + .title--is-4, .subtitle--is-5 + .title--is-4, .subtitle--is-6 + .title--is-4, .subtitle + .title--is-5, .subtitle--is-1 + .title--is-5, .subtitle--is-2 + .title--is-5, .subtitle--is-3 + .title--is-5, .subtitle--is-4 + .title--is-5, .subtitle--is-5 + .title--is-5, .subtitle--is-6 + .title--is-5, .subtitle + .title--is-6, .subtitle--is-1 + .title--is-6, .subtitle--is-2 + .title--is-6, .subtitle--is-3 + .title--is-6, .subtitle--is-4 + .title--is-6, .subtitle--is-5 + .title--is-6, .subtitle--is-6 + .title--is-6 {
     margin-top: -1.5rem; }
-
-.subtitle--is-1 {
-  font-size: 3.5rem; }
-
-.subtitle--is-2 {
-  font-size: 2.75rem; }
-
-.subtitle--is-3 {
-  font-size: 2rem; }
-
-.subtitle--is-4 {
-  font-size: 1.5rem; }
-
-.subtitle--is-5 {
-  font-size: 1.25rem; }
-
-.subtitle--is-6 {
-  font-size: 14px; }
+  .subtitle--is-1 {
+    font-size: 3.5rem; }
+  .subtitle--is-2 {
+    font-size: 2.75rem; }
+  .subtitle--is-3 {
+    font-size: 2rem; }
+  .subtitle--is-4 {
+    font-size: 1.5rem; }
+  .subtitle--is-5 {
+    font-size: 1.25rem; }
+  .subtitle--is-6 {
+    font-size: 14px; }
