@@ -1505,3 +1505,76 @@
 
 .p-margin--4 {
   margin: 40px !important; }
+
+.title,
+.subtitle {
+  word-break: break-word; }
+  .title em,
+  .title span,
+  .subtitle em,
+  .subtitle span {
+    font-weight: 300; }
+  .title strong,
+  .subtitle strong {
+    font-weight: 500; }
+  .title:not(:last-child),
+  .subtitle:not(:last-child) {
+    margin-bottom: 1.5rem; }
+
+.title {
+  color: red;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.125; }
+  .title strong {
+    color: inherit; }
+  .title + .highlight {
+    margin-top: -0.75rem; }
+  .title + .subtitle {
+    margin-top: -1.25rem; }
+
+.title--is-1 {
+  font-size: 3.5rem; }
+
+.title--is-2 {
+  font-size: 2.75rem; }
+
+.title--is-3 {
+  font-size: 2rem; }
+
+.title--is-4 {
+  font-size: 1.5rem; }
+
+.title--is-5 {
+  font-size: 1.25rem; }
+
+.title--is-6 {
+  font-size: 14px; }
+
+.subtitle {
+  color: red;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.25; }
+  .subtitle strong {
+    color: red; }
+  .subtitle + .title {
+    margin-top: -1.5rem; }
+
+.subtitle--is-1 {
+  font-size: 3.5rem; }
+
+.subtitle--is-2 {
+  font-size: 2.75rem; }
+
+.subtitle--is-3 {
+  font-size: 2rem; }
+
+.subtitle--is-4 {
+  font-size: 1.5rem; }
+
+.subtitle--is-5 {
+  font-size: 1.25rem; }
+
+.subtitle--is-6 {
+  font-size: 14px; }
