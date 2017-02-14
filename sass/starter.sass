@@ -5,8 +5,6 @@
 @import "base/spacing/spacing.variables"
 @import "base/typography/font-sizes.variables"
 @import "base/typography/font-weight.variables"
-@import "base/typography/subtitle.variables"
-@import "base/typography/title.variables"
 
 // Import all mixins and function
 @import "base/bem/bem.mixins"
@@ -17,7 +15,13 @@
 @import "base/palette/get-from-palette.function"
 @import "base/spacing/spacing.function"
 
+// Import variables with dependencies
+@import "base/palette/context-palette.variables"
+@import "base/typography/subtitle.variables"
+@import "base/typography/title.variables"
+
 // Import classes
 @import "base/grid/grid"
 @import "base/spacing/spacing-utilities"
 @import "base/typography/title-subtitle"
+

@@ -1514,7 +1514,8 @@
 .subtitle--is-4,
 .subtitle--is-5,
 .subtitle--is-6 {
-  word-break: break-word; }
+  word-break: break-word;
+  font-family: sans-serif; }
   .title em, .title--is-1 em, .title--is-2 em, .title--is-3 em, .title--is-4 em, .title--is-5 em, .title--is-6 em,
   .title span, .title--is-1 span, .title--is-2 span, .title--is-3 span, .title--is-4 span, .title--is-5 span, .title--is-6 span,
   .subtitle em, .subtitle--is-1 em, .subtitle--is-2 em, .subtitle--is-3 em, .subtitle--is-4 em, .subtitle--is-5 em, .subtitle--is-6 em,
@@ -1534,7 +1535,7 @@
     margin-bottom: 1.5rem; }
 
 .title, .title--is-1, .title--is-2, .title--is-3, .title--is-4, .title--is-5, .title--is-6 {
-  color: red;
+  color: #212121;
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.125; }
@@ -1558,7 +1559,7 @@
     font-size: 14px; }
 
 .subtitle, .subtitle--is-1, .subtitle--is-2, .subtitle--is-3, .subtitle--is-4, .subtitle--is-5, .subtitle--is-6 {
-  color: red;
+  color: #424242;
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.25; }
